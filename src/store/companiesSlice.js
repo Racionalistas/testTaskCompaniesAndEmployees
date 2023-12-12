@@ -61,7 +61,7 @@ const companiesSlice = createSlice({
                 if (operation === 'SUBSTRACT') {
                     company.employeeCount -= 1;
                 } else if (operation === 'ADD') {
-                    company.employeeCount += 1;
+                    company.employeeCount = parseInt(company.employeeCount) + 1;
                 }
             }
         },
