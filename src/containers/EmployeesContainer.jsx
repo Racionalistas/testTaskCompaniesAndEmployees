@@ -25,7 +25,6 @@ const EmployeesContainer = () => {
     };
 
     const editNumOfWorkers = (companyId, operation) => {
-        console.log(companyId, operation, 'asdasd')
         dispatch(editCompanyEmployees({ companyId, operation }))
     }
 

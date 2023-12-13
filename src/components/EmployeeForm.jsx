@@ -60,7 +60,7 @@ const EmployeeForm = ({ onAddEmployee, companyIdsArray = undefined, editNumOfWor
                 <input type="text" name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    disabled={!companyIdsArray.length}
+                    disabled={!companyIdsArray.length || companyIdsArray.length > 1}
                     style={{ backgroundColor: (!companyIdsArray.length || companyIdsArray.length > 1) && 'grey' }}
                 />
             </label>
@@ -69,7 +69,7 @@ const EmployeeForm = ({ onAddEmployee, companyIdsArray = undefined, editNumOfWor
                 <input type="text" name="position"
                     value={formData.position}
                     onChange={handleChange}
-                    disabled={!companyIdsArray.length}
+                    disabled={!companyIdsArray.length || companyIdsArray.length > 1}
                     style={{ backgroundColor: (!companyIdsArray.length || companyIdsArray.length > 1) && 'grey' }}
                 />
             </label>

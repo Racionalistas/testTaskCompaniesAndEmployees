@@ -55,7 +55,6 @@ const companiesSlice = createSlice({
         },
         editCompanyEmployees: (state, action) => {
             const { companyId, operation } = action.payload;
-            console.log(companyId, operation)
             const company = state.find(c => c.id === companyId);
             if (company) {
                 if (operation === 'SUBSTRACT') {
